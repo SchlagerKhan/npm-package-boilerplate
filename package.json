@@ -1,0 +1,53 @@
+{
+	"name": "@schlagerkhan/npm-package-boilerplate",
+	"version": "0.0.1",
+	"description": "Boilerplate for an npm package",
+	"main": "./lib/index.js",
+	"scripts": {
+		"clean": "rimraf lib",
+		"lint": "eslint src",
+		"test": "jest",
+		"test:watch": "yarn test --watch",
+		"build": "cross-env BABEL_ENV=production babel src/**/*.js --out-dir lib",
+		"prepublish": "yarn clean && yarn lint && yarn test && yarn build"
+	},
+	"license": "MIT",
+	"files": [
+		"src",
+		"lib"
+	],
+	"repository": {
+		"type": "git",
+		"url": "https://github.com/SchlagerKhan/npm-package-boilerplate"
+	},
+	"keywords": [
+		"npm",
+		"package",
+		"boilerplate",
+		"javascript",
+		"publish"
+	],
+	"bugs": {
+		"url": "https://github.com/SchlagerKhan/npm-package-boilerplate/issues"
+	},
+	"homepage": "https://github.com/SchlagerKhan/npm-package-boilerplate",
+	"devDependencies": {
+		"@babel/cli": "^7.4.4",
+		"@babel/core": "^7.4.5",
+		"@babel/plugin-proposal-class-properties": "^7.4.4",
+		"@babel/plugin-proposal-decorators": "^7.4.4",
+		"@babel/polyfill": "^7.4.4",
+		"@babel/preset-env": "^7.4.5",
+		"@babel/preset-react": "^7.0.0",
+		"babel-eslint": "^10.0.1",
+		"babel-plugin-module-resolver": "^3.2.0",
+		"babel-preset-minify": "^0.5.0",
+		"cross-env": "^5.1.3",
+		"eslint": "^5.16.0",
+		"eslint-config-schlagerkhan": "schlagerkhan/eslint-config-schlagerkhan",
+		"eslint-import-resolver-babel-module": "^5.1.0",
+		"jest": "^24.8.0",
+		"rimraf": "^2.6.2"
+	},
+	"dependencies": {}
+}
