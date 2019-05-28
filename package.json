@@ -9,8 +9,7 @@
 		"test": "jest",
 		"test:watch": "yarn test --watch",
 		"build": "cross-env BABEL_ENV=production babel src --out-dir lib",
-		"prepare": "yarn clean && yarn lint && yarn test && yarn build",
-		"pub": "npm publish --access public"
+		"prepare": "yarn clean && yarn lint && yarn test && yarn build"
 	},
 	"license": "MIT",
 	"files": [
