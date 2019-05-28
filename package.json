@@ -1,6 +1,6 @@
 {
 	"name": "@schlagerkhan/npm-package-boilerplate",
-	"version": "0.0.2",
+	"version": "0.0.3",
 	"description": "Boilerplate for an npm package",
 	"main": "./lib/index.js",
 	"scripts": {
