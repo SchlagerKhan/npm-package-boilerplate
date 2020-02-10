@@ -43,7 +43,7 @@
 		"eslint": "^5.16.0",
 		"eslint-config-schlagerkhan": "schlagerkhan/eslint-config-schlagerkhan",
 		"jest": "^24.8.0",
-		"rimraf": "^2.6.2"
+		"rimraf": "^3.0.2"
 	},
 	"dependencies": {}
 }
